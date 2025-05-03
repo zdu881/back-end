@@ -10,6 +10,9 @@ class TagType(db.Model):
     # Constants for easy reference
     SYSTEM = 'system'
     USER = 'user'
+    COURSE_SUBJECT = 'course_subject'
+    COURSE_TEACHER = 'course_teacher' 
+    COURSE_DEPARTMENT = 'course_department'
     
     @classmethod
     def get_system_type(cls):
