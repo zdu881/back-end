@@ -9,7 +9,7 @@ load_dotenv(os.path.join(basedir, '..', '.env'))
 
 class Config:
     SECRET_KEY = os.getenv('SECRET_KEY', 'your_default_secret_key')
-    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'postgres:///app.db')
+    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'postgresql+psycopg2:///app.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
     # JWT Configuration
